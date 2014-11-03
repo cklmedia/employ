@@ -43,7 +43,7 @@ body{background:#00b685;font-family: 'SourceHanSans'}
 .redio_button_box{background: white;height: 34px;padding: 6px 12px;border-radius: 4px;color: #999999;}
 .job_form_buttom{background: #0cb185;color: white;}
 .group_like_logo{display: block;width: 80px;float: left;margin: 2% 2% 0 2%;}
-.grayed_image{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+.grayed_image{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; opacity: 0.3;}
 .job_flow{margin: 45px 10% 10% 10%;color: white;font-size: 45px;text-align: center;}
 .job_flow img{width: 25px; margin: 25px;}
 
@@ -51,7 +51,7 @@ body{background:#00b685;font-family: 'SourceHanSans'}
 .job_first_flow{background: white;color:#229372;border-radius: 7px;padding: 5px;}
 .job_know_rule{margin: 10% 25% 0% 25%;color: white;font-size: 17px;list-style-type: none;}
 .job_know_rule ul{padding: 20px;border-radius: 15px;}
-.job_know_rule ul:nth-child(1){background: #007130;}
-.job_know_rule ul:nth-child(2){background: #009944;margin: 10px 0;}
-.job_know_rule ul:nth-child(3){background: #32b16c;}
+.job_know_rule ul:nth-child(1){background: #005982;}
+.job_know_rule ul:nth-child(2){background: #0075a9;margin: 10px 0;}
+.job_know_rule ul:nth-child(3){background: #00a0e9;}
 .job_know_rule h4{color: #b4ff00;}
