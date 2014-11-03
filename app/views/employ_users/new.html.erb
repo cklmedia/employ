@@ -13,7 +13,13 @@
 </div>
 
 <div class="job_content" >
-  
+  <!-- 提示信息 -->
+  <% flash.each do |key, value| %>
+    <div class="alert alert-success" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+       <%= value %>
+    </div>
+  <% end %>
   <!-- 内容 -->
   <ul>
   	<li id="job_content_li_img_1" class="job_content_li li_show" style="display:block;">
@@ -132,7 +138,7 @@
                 <a href="#">
                 <img src="/assets/logo_code.png" class="group_like_logo grayed_image" alt="算法组" data-toggle="tooltip" data-placement="bottom" title="算法组">
                 </a>
-                <input name="like_group" type="hidden" class="like_group_input_for_js" value="web组"/>
+                <%= hidden_field_tag "user[like_group]","web组",:class => "like_group_input_for_js" %>
                 <div class="clr"></div>
               </div>
             </div>

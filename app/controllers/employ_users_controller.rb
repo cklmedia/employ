@@ -7,6 +7,7 @@ class EmployUsersController < ApplicationController
   def create
   	@user = User.new(get_user_params)
   	@user.save
+    flash[:success] = "恭喜你，申请成功！请耐心等待电话或者邮件通知您参加面试。"
 	  redirect_to :back
   end
 
