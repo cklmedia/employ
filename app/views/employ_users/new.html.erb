@@ -1,0 +1,172 @@
+<div class="job_nav_box">
+  <div class="job_nav">
+    <div class="job_logo">
+      <img src="/assets/pin.png">
+    </div>
+    <ul class="job_nav_ul">
+      <li class="nav_link_act nav_first nav_title_active"><a href="#">首页</a></li>
+      <li class="nav_link_act nav_second"><a href="#">概况</a></li>
+      <li class="nav_link_act nav_third"><a href="#">须知</a></li>
+      <li class="nav_link_act nav_fourth"><a href="#">申请</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="job_content" >
+  
+  <!-- 内容 -->
+  <ul>
+  	<li id="job_content_li_img_1" class="job_content_li li_show" style="display:block;">
+      <article class="first_page_lab_name">杭师大智能多媒体技术实验室<p>移动健康管理系统教育部工程研究中心</p></article>
+  	</li>
+  	<li id="job_content_li_img_2" class="job_content_li" style="display:none;">
+      <div class="lab_information_box">
+        <div class="lab_web_box">
+          <img src="/assets/logo_web.png" class="lab_group_logo">
+          <img src="/assets/heading_web.jpg" class="lab_group_name">
+          <article>
+            <p>
+              1.web开发组：柴凯龙为组长，目前有4-5人的团队规模<br/><br/>
+                主要开发内容：<br/>
+                1.社区健康管理系统的研发<br/>
+                2.智能移动健康管理中心网站的研发<br/>
+                3. 实验室内部系统的研发<br/>
+                预招人数：3-4人
+            </p>
+          </article>
+        </div>
+        <div class="lab_web_android">
+          <img src="/assets/logo_android.png" class="lab_group_logo">
+          <img src="/assets/heading_android.jpg" class="lab_group_name">
+          <article>
+            <p>
+              2.移动开发组：莫庸为组长，目前有4-5人的团队规模<br/><br/>
+                主要开发内容：<br/>
+                1. 社区健康管理应用的研发<br/>
+                2. 实验室内部使用应用APP研发<br/>
+                3. 其他工具类APP研发<br/>
+                预招人数：3-4人
+            </p>
+          </article>
+        </div>
+        <div class="lab_web_code">
+          <img src="/assets/logo_code.png" class="lab_group_logo">
+          <img src="/assets/heading_code.png" class="lab_group_name">
+          <article>
+            <p>
+              3.算法研发组：有两名研究生带领科研项目的研发，有本科学生参与项目<br/><br/>
+              主要开发内容：<br/>
+                1.遥感图像相关算法研发<br/>
+                2.健康建议数据库研发<br/>
+                预招人数：1-2人
+            </p>
+          </article>
+        </div>
+        <div class="clr"></div>
+      </div>
+  	</li>
+  	<li id="job_content_li_img_3" class="job_content_li" style="display:none;">
+      <div class="job_know_rule">
+        <ul>
+          <li><h4>个人要求</h4></li>
+          <li>1. 对计算机相关领域技术充满热情，热爱学习新技术</li>
+          <li>2. 学习成绩在中上水平，为人认真、开朗</li>
+          <li>3. 可保证每周至少24小时到实验室完成实验室任务和学习</li>
+          <li>4. 可保证对实验室项目认真负责，并能持续坚持完成项目的顺利的完成</li>
+        </ul>
+        <ul>
+          <li><h4>技术要求</h4></li>
+          <li>1. 较扎实的编程基础（C/C++语言）</li>
+          <li>2. 数据结构和算法基础</li>
+        </ul>
+        <ul>
+          <li><h4>以下为加分项</h4></li>
+          <li>3. 掌握web开发基础（html/css/javascript）</li>
+          <li>4. 掌握java开发语言</li>
+          <li>5. 会简单使用Linux/Mac操作系统，掌握基础的命令行</li>
+          <li>6. 有github账号，掌握git的使用方法</li>
+          <li>7. 有参与开源项目的开发、或者其他应用型/科研型项目开发的经验</li>
+        </ul>
+      </div>
+
+  	</li>
+    <li id="job_content_li_img_4" class="job_content_li" style="display:none;">
+      <div class="job_form_box">
+        <%= form_for(@user, url: employ_users_path) do |f| %>
+          <div style="width:48%; float:left;">
+            <div class="form-group">
+              <%= f.text_field :name,:class => "form-control input—validate",placeholder:"姓名"%>
+            </div>
+
+            <div class="form-group">
+              <%= f.text_field :card,:class => "form-control input—validate",placeholder:"学号"%>
+            </div>
+
+            <div class="form-group redio_button_box">
+              <%= f.label :性别： %>
+              <%=f.radio_button :sex, "男",:checked => true%>
+              <%=f.label :sex,"男" %>
+              <%=f.radio_button :sex, "女" %>
+              <%=f.label :sex,"女" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.text_field :tel,:class => "form-control input—validate",placeholder:"电话"%>
+            </div>
+
+            <div class="form-group">
+              <%= f.text_field :email,:class => "form-control input—validate",placeholder:"邮箱"%>
+            </div>
+          </div>
+         
+          <div style="width:48%; float:right;">
+            <div class="form-group">
+              <%= f.label :小组意向： %>
+              <div>
+                <a href="#">
+                <img src="/assets/logo_web.png" class="group_like_logo" alt="web组" data-toggle="tooltip" data-placement="bottom" title="web组">
+                </a>
+                <a href="#">
+                <img src="/assets/logo_android.png" class="group_like_logo grayed_image" alt="android组" data-toggle="tooltip" data-placement="bottom" title="android组">
+                </a>
+                <a href="#">
+                <img src="/assets/logo_code.png" class="group_like_logo grayed_image" alt="算法组" data-toggle="tooltip" data-placement="bottom" title="算法组">
+                </a>
+                <input name="like_group" type="hidden" class="like_group_input_for_js" value="web组"/>
+                <div class="clr"></div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <%= f.text_area :talking,:class => "form-control",placeholder:"悄悄话，100字以内。"%>
+            </div>
+            <div class="form-group">
+              <%= f.submit "提交", class: "btn job_form_buttom form-control signin_box_button"%>
+            </div>
+          </div>
+          <div class="clr"></div>
+        <% end %>
+      </div>
+      
+      <div class="job_flow">
+        <p>
+          <span class="job_first_flow">申请</span>
+          <img src="/assets/next.png">
+          <span class="job_flow_span"  data-toggle="tooltip" data-placement="top" title="我们会安排一场轻松的面试。">面试</span>
+          <img src="/assets/next.png">
+          <span class="job_flow_span"  data-toggle="tooltip" data-placement="top" title="一个月左右学习，熟悉工作。">实习</span>
+          <img src="/assets/next.png">
+          <span class="job_flow_span"  data-toggle="tooltip" data-placement="top" title="我们会安排笔试，检验实习成果。">笔试</span>
+          <img src="/assets/next.png">
+          <span class="job_flow_span"  data-toggle="tooltip" data-placement="top" title="正式成为我们的新血液。">转正</span></p>
+      </div>
+    </li>
+  </ul>
+  <!-- 左右控件 -->
+  <div class="job_content_action action_left" style="display:none;">
+      <a href="#"><img src="/assets/left_arrow.png"></a>
+  </div>
+  <div class="job_content_action action_right">
+      <a href="#"><img src="/assets/right_arrow.png"></a>
+  </div>
+</div>

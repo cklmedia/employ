@@ -1,0 +1,50 @@
+@import "bootstrap";
+body{background-image: url(/assets/green.jpg);}
+
+.clr{clear: both;}
+.job_nav{width: 70%;margin: auto;height: 76px;}
+.job_logo{position: absolute;}
+.job_logo img{width: 149px;height: 100px;}
+.job_nav_ul{overflow: hidden;margin:0 0 0 200px;font-size: 30px;}
+.job_nav_ul li{float: left;list-style-type: none;}
+.job_nav_ul li + li {margin-left: 30px;}
+.job_nav_ul li a{display: block;padding: 16px;text-decoration: none;color: white;}
+.job_content ul{padding: 0;margin: 0;}
+.job_content li{list-style-type: none;}
+#job_content_li_img_1{background-image: url(/assets//one2.jpg);background-repeat: no-repeat;background-position: 50% 50%;background-size: cover;}
+.job_content_li{position: absolute;top:0px;z-index:-1;}
+.job_content_action{width: 70px;height: 70px;border-radius: 35px;background: rgb(236, 245, 243);position: absolute;opacity: 0.7;}
+.job_content_action{padding: 11px;}
+.action_left{left: 1%;top:50%;}
+.action_right{right: 1%;top:50%;}
+.action_up{left: 1%;top: 90px}
+.action_down{left: 1%; bottom:14px;}
+.nav_title_active{border-top: 10px solid red;}
+.job_nav_box{background-image: url(/assets/pix.png);}
+// 内容布局
+.first_page_lab_name{text-align: right;display: block;margin: 221px 9% 0 0%;color: white;font-size: 50px;text-shadow: 5px 5px 5px #4D687B;}
+.lab_information_box{width: 86%;margin:auto; margin-top: 12%;}
+.lab_information_box article{font-size: 20px;}
+.lab_web_box{float: left; width: 28%;background: #eeeeee;padding: 30px;height: 500px;border-radius: 10px;}
+.lab_web_android{float: left;width: 28%;margin: 0 8%;background: #eeeeee;padding: 30px;height: 500px;border-radius: 10px;}
+.lab_web_code{float: left;width: 28%;background: #eeeeee;padding: 30px;height: 500px;border-radius: 10px;}
+.lab_group_logo{position: relative;top: -80px;left: -25%;width: 40%;}
+.lab_group_name{margin: -155px 0 0 8%;width: 79%;}
+
+.job_form_box{margin: 15% 15% 0 15%;background: #eee;padding: 25px;border-radius: 8px;}
+// 单选扭外框
+.redio_button_box{background: white;height: 34px;padding: 6px 12px;border: 1px solid #cccccc;border-radius: 4px;color: #999999;}
+.job_form_buttom{background: #0cb185;color: white;}
+.group_like_logo{display: block;width: 80px;float: left;margin: 2% 2% 0 2%;}
+.grayed_image{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+.job_flow{margin: 45px 10% 10% 10%;color: white;font-size: 45px;text-align: center;}
+.job_flow img{width: 25px; margin: 25px;}
+
+.tooltip-inner{opacity: 0.6;}
+.job_first_flow{background: white;color:#229372;border-radius: 7px;padding: 5px;}
+.job_know_rule{margin: 10% 25% 0% 25%;color: white;font-size: 17px;list-style-type: none;}
+.job_know_rule ul{padding: 20px;border: 2px dashed white;border-radius: 20px;}
+.job_know_rule ul:nth-child(1){background: #007130;}
+.job_know_rule ul:nth-child(2){background: #009944;margin: 10px 0;}
+.job_know_rule ul:nth-child(3){background: #32b16c;}
+.job_know_rule h4{color: #b4ff00;}
