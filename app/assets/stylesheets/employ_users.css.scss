@@ -16,7 +16,8 @@ body{background:#00b685;font-family: 'SourceHanSans'}
 .job_content li{list-style-type: none;}
 #job_content_li_img_1{background-image: url(/assets/one1.jpg);background-repeat: no-repeat;background-position: 50% 50%;background-size: cover;}
 .job_content_li{position: absolute;top:0px;z-index:-1;}
-.job_content_action{width: 70px;height: 70px;position: absolute;padding: 11px;}
+.job_content_action{position: absolute;padding: 11px;}
+.job_content_action img{width: 75%;}
 .action_left{left: 1%;top:45%;}
 .action_right{right: 1%;top:45%;}
 .action_up{left: 1%;top: 90px}
